@@ -6,3 +6,7 @@ kafka_project/
 .DS_Store
 .vscode/
 .idea/
+.venv/
+data/
+artifacts/
+catboost_info/

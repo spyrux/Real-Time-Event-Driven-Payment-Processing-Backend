@@ -45,6 +45,11 @@ def get_db_connection():
 
 
 def process_event(event, start_time):
+    # Legacy events omit currency or use "unknown". Explicit currencies must
+    # match this demo's single USD ledger, including events from other producers.
+    if event.get("currency") not in (None, "unknown", "USD"):
+        raise ValueError("Payment ledger only supports USD")
+
     logger.info("Received event %s for payment %s", event["event_id"], event["payment_id"])
 
     conn = get_db_connection()

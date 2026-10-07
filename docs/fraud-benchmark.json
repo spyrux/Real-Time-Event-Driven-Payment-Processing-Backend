@@ -1,0 +1,93 @@
+{
+  "mode": "shadow",
+  "feature_version": "payment-risk-v1",
+  "feature_names": [
+    "amount",
+    "prior_count_1h",
+    "prior_amount_1h",
+    "hour_utc",
+    "weekday_utc",
+    "currency",
+    "merchant_category"
+  ],
+  "review_threshold": 0.4958335567430499,
+  "minimum_validation_precision": 0.9,
+  "trained_at": "2026-09-30T02:39:46.084648+00:00",
+  "dataset_sha256": "6781a8c969e383adac272cd4b34ac7237f18ac402a715a192b36336cc7be3468",
+  "validation": {
+    "rows": 370222,
+    "fraud_count": 1897,
+    "average_precision": 0.8550720391062558,
+    "precision": 0.9003367003367003,
+    "recall": 0.7047970479704797,
+    "false_positive_rate": 0.0004018190456797665,
+    "true_positives": 1337,
+    "false_positives": 148,
+    "false_negatives": 560,
+    "true_negatives": 368177
+  },
+  "test": {
+    "rows": 371552,
+    "fraud_count": 1368,
+    "average_precision": 0.844934034478717,
+    "precision": 0.861646234676007,
+    "recall": 0.7192982456140351,
+    "false_positive_rate": 0.00042681477319387115,
+    "true_positives": 984,
+    "false_positives": 158,
+    "false_negatives": 384,
+    "true_negatives": 370026
+  },
+  "splits": {
+    "train": {
+      "rows": 1110620,
+      "start": 1546300818.0,
+      "end": 1586216280.0
+    },
+    "validation": {
+      "rows": 370222,
+      "start": 1586216286.0,
+      "end": 1598298880.0
+    },
+    "test": {
+      "rows": 371552,
+      "start": 1598298898.0,
+      "end": 1609459174.0
+    }
+  },
+  "note": "Uncalibrated model scores; this report does not enable payment enforcement.",
+  "supported_currencies": [
+    "USD"
+  ],
+  "merchant_categories": [
+    "entertainment",
+    "food_dining",
+    "gas_transport",
+    "grocery_net",
+    "grocery_pos",
+    "health_fitness",
+    "home",
+    "kids_pets",
+    "misc_net",
+    "misc_pos",
+    "personal_care",
+    "shopping_net",
+    "shopping_pos",
+    "travel"
+  ],
+  "local_inference_ms": {
+    "p50": 0.048624999180901796,
+    "p95": 0.11892739985341903,
+    "p99": 0.18745458066405254
+  },
+  "dataset": {
+    "source": "https://www.kaggle.com/datasets/kartik2112/fraud-detection",
+    "data_kind": "synthetic",
+    "rows": 1852394,
+    "fraud": 9651,
+    "mapping": "Naive simulated times treated as UTC; amounts converted to USD cents.",
+    "excluded": "Card number, demographics, names, addresses, locations, and post-outcome data.",
+    "evaluation": "Combined archive is re-split chronologically by risk.train."
+  },
+  "model_sha256": "293e4c54ba3e964520e26602fb2957e2e74bb06cef37a713590125b553ae0fed"
+}

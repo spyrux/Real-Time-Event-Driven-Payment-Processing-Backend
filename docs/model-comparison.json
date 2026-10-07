@@ -1,0 +1,354 @@
+{
+  "methods": {
+    "catboost": {
+      "threshold": 0.3397734304157444,
+      "calibration": {
+        "rows": 3000,
+        "fraud_cases": 200,
+        "precision": 0.8086066922711915,
+        "recall": 0.7149999999999997,
+        "false_positive_rate": 0.0007142857142857006,
+        "average_precision": 0.8053665527747438,
+        "roc_auc": 0.9930098214285715,
+        "sample_counts": {
+          "tn": 2798,
+          "fp": 2,
+          "fn": 57,
+          "tp": 143
+        },
+        "estimated_population_counts": {
+          "tn": 184201.33357143213,
+          "fp": 131.66642857142858,
+          "fn": 221.72999999999968,
+          "tp": 556.2699999999985
+        }
+      },
+      "test": {
+        "rows": 5000,
+        "fraud_cases": 200,
+        "precision": 0.718650778691565,
+        "recall": 0.7200000000000005,
+        "false_positive_rate": 0.0010416666666667092,
+        "average_precision": 0.801987017041264,
+        "roc_auc": 0.9847359374999992,
+        "sample_counts": {
+          "tn": 4795,
+          "fp": 5,
+          "fn": 56,
+          "tp": 144
+        },
+        "estimated_population_counts": {
+          "tn": 369798.3916666516,
+          "fp": 385.60833333333335,
+          "fn": 383.0399999999996,
+          "tp": 984.9600000000014
+        }
+      },
+      "all_test_review_routing": {
+        "rows": 5000,
+        "fraud_cases": 200,
+        "precision": 0.718650778691565,
+        "recall": 0.7200000000000005,
+        "false_positive_rate": 0.0010416666666667092,
+        "sample_counts": {
+          "tn": 4795,
+          "fp": 5,
+          "fn": 56,
+          "tp": 144
+        },
+        "estimated_population_counts": {
+          "tn": 369798.3916666516,
+          "fp": 385.60833333333335,
+          "fn": 383.0399999999996,
+          "tp": 984.9600000000014
+        }
+      }
+    },
+    "jev": {
+      "threshold": 0.29,
+      "calibration": {
+        "rows": 3000,
+        "fraud_cases": 200,
+        "precision": 1.0,
+        "recall": 0.005000000000000015,
+        "false_positive_rate": 0.0,
+        "average_precision": 0.024335800642798444,
+        "roc_auc": 0.6765125000000113,
+        "sample_counts": {
+          "tn": 2800,
+          "fp": 0,
+          "fn": 199,
+          "tp": 1
+        },
+        "estimated_population_counts": {
+          "tn": 184333.00000000358,
+          "fp": 0.0,
+          "fn": 774.1099999999977,
+          "tp": 3.89
+        }
+      },
+      "test": {
+        "rows": 5000,
+        "fraud_cases": 200,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_positive_rate": 0.00020833333333334188,
+        "average_precision": 0.029339752535988025,
+        "roc_auc": 0.6995796874999817,
+        "sample_counts": {
+          "tn": 4799,
+          "fp": 1,
+          "fn": 200,
+          "tp": 0
+        },
+        "estimated_population_counts": {
+          "tn": 370106.87833331816,
+          "fp": 77.12166666666667,
+          "fn": 1367.9999999999975,
+          "tp": 0.0
+        }
+      },
+      "all_test_review_routing": {
+        "rows": 5000,
+        "fraud_cases": 200,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_positive_rate": 0.00020833333333334188,
+        "sample_counts": {
+          "tn": 4799,
+          "fp": 1,
+          "fn": 200,
+          "tp": 0
+        },
+        "estimated_population_counts": {
+          "tn": 370106.87833331816,
+          "fp": 77.12166666666667,
+          "fn": 1367.9999999999975,
+          "tp": 0.0
+        }
+      }
+    },
+    "hybrid": {
+      "threshold": 0.5652944460810445,
+      "calibration": {
+        "rows": 3000,
+        "fraud_cases": 200,
+        "precision": 0.8086066922711915,
+        "recall": 0.7149999999999997,
+        "false_positive_rate": 0.0007142857142857006,
+        "average_precision": 0.8047907204462778,
+        "roc_auc": 0.9931223214285716,
+        "sample_counts": {
+          "tn": 2798,
+          "fp": 2,
+          "fn": 57,
+          "tp": 143
+        },
+        "estimated_population_counts": {
+          "tn": 184201.33357143213,
+          "fp": 131.66642857142858,
+          "fn": 221.72999999999968,
+          "tp": 556.2699999999985
+        }
+      },
+      "test": {
+        "rows": 5000,
+        "fraud_cases": 200,
+        "precision": 0.7172396261718795,
+        "recall": 0.7150000000000005,
+        "false_positive_rate": 0.0010416666666667092,
+        "average_precision": 0.8021246385121021,
+        "roc_auc": 0.9847630208333326,
+        "sample_counts": {
+          "tn": 4795,
+          "fp": 5,
+          "fn": 57,
+          "tp": 143
+        },
+        "estimated_population_counts": {
+          "tn": 369798.3916666516,
+          "fp": 385.60833333333335,
+          "fn": 389.8799999999996,
+          "tp": 978.1200000000014
+        }
+      },
+      "all_test_review_routing": {
+        "rows": 5000,
+        "fraud_cases": 200,
+        "precision": 0.7172396261718795,
+        "recall": 0.7150000000000005,
+        "false_positive_rate": 0.0010416666666667092,
+        "sample_counts": {
+          "tn": 4795,
+          "fp": 5,
+          "fn": 57,
+          "tp": 143
+        },
+        "estimated_population_counts": {
+          "tn": 369798.3916666516,
+          "fp": 385.60833333333335,
+          "fn": 389.8799999999996,
+          "tp": 978.1200000000014
+        }
+      }
+    }
+  },
+  "hybrid_model": {
+    "type": "logistic_score_stacker",
+    "features": [
+      "logit_catboost",
+      "logit_jev"
+    ],
+    "clip": [
+      1e-05,
+      0.99999
+    ],
+    "C": 10,
+    "coefficients": [
+      1.3585401752799295,
+      -0.23750652701344277
+    ],
+    "intercept": 0.7340183482333784,
+    "thresholds": {
+      "catboost": 0.3397734304157444,
+      "jev": 0.29,
+      "hybrid": 0.5652944460810445
+    }
+  },
+  "latency_ms": {
+    "catboost": {
+      "p50": 0.041125000279862434,
+      "p95": 0.08971635252237323,
+      "p99": 0.1380969067395202
+    },
+    "jev": {
+      "p50": 158.53195800082176,
+      "p95": 219.19105210326964,
+      "p99": 274.79503190865233
+    },
+    "hybrid_sequential_components": {
+      "p50": 158.58297899467289,
+      "p95": 219.22837120000625,
+      "p99": 274.8365890786228
+    },
+    "hybrid_combiner_mean_ms": 0.03833179099456174
+  },
+  "hybrid_minus_catboost_paired_bootstrap_95pct": {
+    "average_precision": {
+      "lower": -0.002027810248437603,
+      "upper": 0.002338592290593996
+    },
+    "recall": {
+      "lower": -0.015000000000000013,
+      "upper": 0.0
+    },
+    "precision": {
+      "lower": -0.004832774512075891,
+      "upper": 0.0
+    }
+  },
+  "response_coverage": {
+    "hybrid_fit": {
+      "total": 2000,
+      "successful": 2000,
+      "failures": {}
+    },
+    "calibration": {
+      "total": 3000,
+      "successful": 3000,
+      "failures": {}
+    },
+    "test": {
+      "total": 5000,
+      "successful": 5000,
+      "failures": {}
+    }
+  },
+  "created_at": "2026-09-30T18:52:51.951922+00:00",
+  "configuration": {
+    "plan_sha256": "11f3254acbce78ed995e27c23a317e8131607d8dfe957b6716daed725dac22de",
+    "model": "jev-1.13.0",
+    "deadline": 0.8,
+    "prompt_version": "fraud-comparison-v1",
+    "prompt_sha256": "4e4d9af997eea0a799e85e44753f3c233ae6f8fdd23df93bd9b31c1d217e204e",
+    "max_fpr": 0.001,
+    "concurrency": 6,
+    "rps": 20
+  },
+  "dataset": {
+    "source": "https://www.kaggle.com/datasets/kartik2112/fraud-detection",
+    "data_kind": "synthetic",
+    "rows": 1852394,
+    "fraud": 9651,
+    "mapping": "Naive simulated times treated as UTC; amounts converted to USD cents.",
+    "excluded": "Card number, demographics, names, addresses, locations, and post-outcome data.",
+    "evaluation": "Combined archive is re-split chronologically by risk.train."
+  },
+  "dataset_sha256": "6781a8c969e383adac272cd4b34ac7237f18ac402a715a192b36336cc7be3468",
+  "catboost_sha256": "293e4c54ba3e964520e26602fb2957e2e74bb06cef37a713590125b553ae0fed",
+  "phases": {
+    "hybrid_fit": {
+      "classes": {
+        "0": {
+          "population": 183992,
+          "sample": 1800
+        },
+        "1": {
+          "population": 1119,
+          "sample": 200
+        }
+      },
+      "start": 1586216286.0,
+      "end": 1592711951.0
+    },
+    "calibration": {
+      "classes": {
+        "0": {
+          "population": 184333,
+          "sample": 2800
+        },
+        "1": {
+          "population": 778,
+          "sample": 200
+        }
+      },
+      "start": 1592711961.0,
+      "end": 1598298880.0
+    },
+    "test": {
+      "classes": {
+        "0": {
+          "population": 370184,
+          "sample": 4800
+        },
+        "1": {
+          "population": 1368,
+          "sample": 200
+        }
+      },
+      "start": 1598298898.0,
+      "end": 1609459174.0
+    }
+  },
+  "execution": {
+    "fresh_requests": 10000,
+    "cached_responses": 0,
+    "wall_seconds": 509.77326204199926
+  },
+  "known_input_tokens": 4908970,
+  "estimated_known_token_cost_usd": 0.20617674000000002,
+  "pricing_reference": "https://docs.typesafe.ai/models",
+  "caveats": [
+    "Synthetic-data pilot. No production enforcement enabled.",
+    "Fraud-enriched sample; inverse inclusion weights restore each period's natural prevalence.",
+    "Common-success metrics use identical rows for all methods; failures separately route to review.",
+    "Jev is zero-shot on the same seven features; no evaluated labels or CatBoost scores are sent.",
+    "Hybrid fits the earlier half of original validation; thresholds use the later half only.",
+    "Test uses the previous benchmark's held-out period; no prompt or threshold tuning on test outcomes.",
+    "All methods select maximum calibration recall under the same false-positive-rate budget.",
+    "Precision/FPR estimates are uncertain with only 4,800 sampled legitimate test transactions.",
+    "Bootstrap intervals resample transactions, not customers; correlation may make them optimistic.",
+    "Latencies exclude queue/DB work. Hybrid combines separately measured sequential component times.",
+    "Known-token cost excludes timed-out requests with unknown usage; dashboard billing is authoritative."
+  ]
+}

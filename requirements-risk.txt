@@ -1,0 +1,4 @@
+-r requirements.txt
+catboost==1.2.10
+scikit-learn==1.9.1
+httpx==0.28.1

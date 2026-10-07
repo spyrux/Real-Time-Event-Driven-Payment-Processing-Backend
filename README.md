@@ -2,6 +2,21 @@
 
 A backend systems project that models how modern payment platforms process transactions asynchronously using FastAPI, Apache Kafka, and PostgreSQL.
 
+The optional [fraud assessment workflow](docs/fraud-detection.md) adds a trained
+CatBoost baseline, chronological evaluation, and a separate Kafka shadow worker.
+It records fraud scores and optional Jev transaction classification without
+blocking payments. The payment ledger accepts USD only, with amounts in cents.
+Jev is optional and disabled by default; CatBoost works without an API key.
+See [the benchmark report](docs/fraud-benchmark.json) for the
+local synthetic-data results.
+The [three-way comparison](docs/fraud-detection.md#compare-jev-catboost-and-a-hybrid)
+tests zero-shot Jev fraud scoring, CatBoost, and a learned hybrid on the same sample.
+Its [recorded results](docs/model-comparison.json) favor CatBoost for this pilot;
+the hybrid did not demonstrate an improvement.
+A separate [text scam experiment](docs/text-fraud-comparison.md) found that Jev
+improved a CatBoost text classifier on phishing and financial-scam messages.
+Those results concern message classification, not card-transaction blocking.
+
 Instead of tightly coupling request handling to database-heavy business logic, this project separates payment creation from payment processing through an event-driven architecture. The result is a system that is more scalable, fault-tolerant, and closer to real-world distributed payment backends.
 
 ## Tech Stack
